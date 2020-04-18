@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>date in javascript</title>
+	<script type="text/javascript">
+		function hiday()){
+	var d=new Date();
+	alert(d);
+	document.getElementByid('disp').innerhtml=d.tolocalestring();
+	document.getElementByid('disp').style.backgrouncolor='blue';
+	document.getElementByid('disp').style.color='black';
+	document.getElementByid('disp').style.textalign='center';
+	document.getElementByid('disp').style.fontsize='50px';
+	var aweek=d.getdate()+5;
+	var d1=new Date(d.setDate(aweek));
+	if (new Date().getTime() < new Date(d1).getTime()){
+		document.getElementByid('disp').innerhtml=d.tolocalestring();
+	document.getElementByid('disp').style.backgrouncolor='blue';
+	document.getElementByid('disp').style.color='black';
+	document.getElementByid('disp').style.textalign='center';
+	document.getElementByid('disp').style.fontsize='50px';
+}
+}
+</script>
+</head>
+<body onload="hiday()">
+	<h2 align="center">welcome to the apirl month</h2>
+	<div id="disp"></div>
+	<div id="displsy"></div>
+
+</body>
+</html>
